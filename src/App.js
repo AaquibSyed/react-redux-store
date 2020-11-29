@@ -1,4 +1,4 @@
-//feature-1 adding new git branch to test
+//feature-1 new git ranch to test
 import './App.css';
 
 function App() {
