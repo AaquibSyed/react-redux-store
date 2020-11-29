@@ -1,10 +1,19 @@
+//feature1
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-       <h1> a shopping app with react and redux</h1>
-    </div>
+   <div className="grid-container">
+     <header>
+       <a href="/">React shopping cart</a>
+     </header>
+     <main>
+       PRODUCT LIST
+     </main>
+     <footer>
+       All rights reserved
+     </footer>
+   </div>
   );
 }
 
