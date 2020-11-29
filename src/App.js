@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-       <h1> shopping app with react and redux</h1>
+       <h1> a shopping app with react and redux</h1>
     </div>
   );
 }
