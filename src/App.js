@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-
-//feature-1 new git ranch to test
-
-=======
 import React from 'react';
 import data from './data.json';
->>>>>>> 065cd4570322caeb8e57248dc755a246c16e645a
+
 import './App.css';
 import Products from './Components/Products';
 
