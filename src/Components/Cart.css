@@ -46,3 +46,37 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.form-container {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem;
+  width: 90%;
+  align-items: stretch;
+}
+
+.form-container li label {
+  font-weight: bold;
+}
+.form-container li input {
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+.checkout {
+  margin-left: 1.5rem;
+}

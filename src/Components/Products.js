@@ -11,7 +11,9 @@ export default class Products extends Component {
                         <li key={product.id}>
                             <div className="product">
                                 <a href={"#"+product._id}>
-                                    <img alt={product.title}
+                                    <img
+                                     className="product_image"
+                                     alt={product.title}
                                      src={product.image}/>
                                      <p>{product.title}</p>
                                 </a>   
