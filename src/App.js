@@ -74,6 +74,10 @@ class App extends React.Component {
   getTotal = ()=>(
     this.state.cartItems.reduce((a,c)=>(a+(c.count*c.price)),0)
   )
+  createOrder = (order)=>{
+    
+   alert(`order placed for ${order.name}`)
+  }
 
   render(){
     return (
@@ -95,6 +99,7 @@ class App extends React.Component {
               <Cart cartItems={this.state.cartItems} 
               removeFromCart={this.removeFromCart}
               getTotal={this.getTotal}
+              createOrder={this.createOrder}
               />
             </div>
           </div>

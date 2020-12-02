@@ -24,6 +24,8 @@
 .product img {
   max-width: 37rem;
   max-height: 37rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem 0.3rem lightgray;
 }
 
 .product_price {
@@ -46,11 +48,22 @@
   padding: 1rem;
   border: 0.1rem solid #c0c0c0;
   background-color: #f0f0f0;
+  border-radius: 0.7rem;
 }
+
+.btn.primary:hover {
+  background-color: #e4ae1a;
+}
+
 .btn.primary {
   background-color: #f0c040;
 }
+
 button:hover {
   cursor: pointer;
   border: 0.2rem solid #8888;
+}
+
+.product_image:hover {
+  transform: scale(0.9);
 }
