@@ -67,3 +67,48 @@ button:hover {
 .product_image:hover {
   transform: scale(0.9);
 }
+
+.modal_content {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas: "image details";
+  grid-template-columns: 1fr 2fr;
+}
+
+.modal_logo {
+  grid-area: "image";
+  margin-right: 2rem;
+}
+
+.modal_image {
+  object-fit: contain;
+  height: 75vh;
+  box-shadow: 0.1rem 0.3rem 0.4rem 0.5rem lightgrey;
+}
+
+.modal_title {
+  font-size: 3rem;
+}
+
+.modal_details {
+  grid-area: "details";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.button-sizes {
+  background-color: rgb(245, 212, 26);
+  margin: 0.4rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+}
+.btn-closemodal {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.3rem;
+  background-color: rgb(245, 212, 26);
+  font-weight: bold;
+}
