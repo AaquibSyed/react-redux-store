@@ -1,5 +1,5 @@
 import React from "react";
-import data from "./data.json";
+//import data from "./data.json";
 import "./App.css";
 import Products from "./Components/Products";
 import Filter from "./Components/Filter";
@@ -11,9 +11,9 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      products: data.products,
-      size: "",
-      sort: "",
+      //products: data.products,
+      // size: "",
+      // sort: "",
       cartItems: localStorage.getItem("cartItemsLocal")
         ? JSON.parse(localStorage.getItem("cartItemsLocal"))
         : [],
@@ -40,44 +40,44 @@ class App extends React.Component {
     localStorage.setItem("cartItemsLocal", JSON.stringify(_cartItems));
   };
 
-  sortProducts = (event) => {
-    console.log(event.target.value);
-    const sortValue = event.target.value;
-    this.setState({
-      sort: sortValue,
-      products: this.state.products
-        .slice()
-        .sort((a, b) =>
-          sortValue === "lowest"
-            ? a.price > b.price
-              ? 1
-              : -1
-            : sortValue === "highest"
-            ? a.price < b.price
-              ? 1
-              : -1
-            : a._id < b._id
-            ? 1
-            : -1
-        ),
-    });
-  };
+  // sortProducts = (event) => {
+  //   console.log(event.target.value);
+  //   const sortValue = event.target.value;
+  //   this.setState({
+  //     sort: sortValue,
+  //     products: this.state.products
+  //       .slice()
+  //       .sort((a, b) =>
+  //         sortValue === "lowest"
+  //           ? a.price > b.price
+  //             ? 1
+  //             : -1
+  //           : sortValue === "highest"
+  //           ? a.price < b.price
+  //             ? 1
+  //             : -1
+  //           : a._id < b._id
+  //           ? 1
+  //           : -1
+  //       ),
+  //   });
+  // };
 
-  filterProducts = (event) => {
-    if (event.target.value === "" || event.target.value === "ALL") {
-      this.setState({
-        size: event.target.value,
-        products: data.products,
-      });
-    } else {
-      this.setState({
-        size: event.target.value,
-        products: data.products.filter(
-          (product) => product.availableSizes.indexOf(event.target.value) >= 0
-        ),
-      });
-    }
-  };
+  // filterProducts = (event) => {
+  //   if (event.target.value === "" || event.target.value === "ALL") {
+  //     this.setState({
+  //       size: event.target.value,
+  //       products: data.products,
+  //     });
+  //   } else {
+  //     this.setState({
+  //       size: event.target.value,
+  //       products: data.products.filter(
+  //         (product) => product.availableSizes.indexOf(event.target.value) >= 0
+  //       ),
+  //     });
+  //   }
+  // };
   removeFromCart = (product) => {
     let newCartItems = this.state.cartItems
       .slice()
@@ -106,14 +106,14 @@ class App extends React.Component {
             <div className="content">
               <div className="main">
                 <Filter
-                  count={this.state.products.length}
-                  size={this.state.size}
-                  sort={this.state.sort}
-                  filterProducts={this.filterProducts}
-                  sortProducts={this.sortProducts}
+                // count={this.state.products.length}
+                // size={this.state.size}
+                // sort={this.state.sort}
+                // filterProducts={this.filterProducts}
+                // sortProducts={this.sortProducts}
                 />
                 <Products
-                  products={this.state.products}
+                  // products={this.state.products}
                   addToCart={this.addToCart}
                 />
               </div>
